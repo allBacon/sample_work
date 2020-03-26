@@ -1,0 +1,372 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#pagewrapper {
+    min-width: 483px;
+}
+/* main set of style rules for used for demo*/
+/* Use mainwrapper as main flex containter */
+
+header,
+footer {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 150px;
+    background-color: #FFFFFF;
+}
+header {
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header h1 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    color: #0077D3;
+}
+.header-content {
+    display: inline-block;
+    position: relative;
+    left: calc(100% - 350px);
+    height: 100px;
+    width: 350px;
+}
+.social {
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+    position: relative;
+    text-align: right;
+    font-size: 30px;
+    left: calc(100% - 350px);
+    text-decoration: none;
+}
+.social .fa {
+    color: #919191;
+}
+.sdd {
+    color: rgba(0, 0, 0, 1);
+    background-color: #919191;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size: 20px;
+    height: 255px;
+    width: 27px;
+    transform: translateY(-7px) translateX(-0px);
+}
+.social .fa-search {
+    color: rgba(0, 0, 0, 1);
+    background-color: #919191;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size: 20px;
+    height: 27px;
+    width: 27px;
+    transform: translateY(-7px) translateX(-0px);
+}
+.social form {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    display: inline;
+}
+button {
+    margin: 0;
+    padding: 0!important;
+    background: none!important;
+    border: none;
+    cursor: pointer;
+}
+#header-search {
+    margin: 0;
+    padding: 0 5px;
+    height: 25px;
+    width: 100px;
+    border: none;
+    position: relative;
+    top: -6px;
+    left: 11px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.header-login {
+    color: #FFFFFF;
+}
+.header-login > div {
+    margin-right: 15px;
+    position: relative;
+    font-size: 0.9rem;
+    left: calc(100% - 140px);
+    display: inline-block;
+}
+.header-login > div:last-of-type {
+    margin-right: 0;
+}
+.header-login-form {
+    display: none;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.header-login-form form input {
+    display: inline-block;
+    width: 100px;
+    border: none;
+    padding: 2px 3px;
+}
+.fa-sign-in {
+    color: #919191;
+    font-size: 20px;
+    transform: translateY(2px);
+}
+nav {
+    position: relative;
+    max-width: 1200px;
+    top: 40px;
+}
+#main-wrapper {
+    margin: 20px 0 0 0;
+    padding: 0;
+    display: -webkit-flex;
+    /* important: this is how you initialize the flex box container */
+    display: flex;
+    -webkit-flex-flow: row;
+    /* This sets the orientation of the flex boxes to row style */
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#main-wrapper {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+    -webkit-order: 1;
+    order: 1;
+    display: flex;
+}
+#main-wrapper > aside {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    background-color: #FFFFFF;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+    -webkit-order: 2;
+    order: 2;
+    max-width: 300px;
+}
+/* end main styles */
+
+a,
+a:visited {
+    /* remove all underlines from links */
+    text-decoration: none;
+    color: inherit;
+}
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+#main-content > article {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    background-color: #FFFFFF;
+    flex-grow: 2;
+}
+.review {
+    margin: 10px auto 0 auto;
+    padding: 5px 20px;
+    display: flex;
+    flex: 1 100%;
+    background-color: #FFFFFF;
+}
+iframe {
+    border: none;
+}
+.review:first-of-type {
+    margin-top: 0;
+}
+.meta-content {
+    margin-left: 10px;
+    flex: 1 100%;
+    order: 1;
+    padding: 0 0 0 10px;
+    min-width: 250px;
+}
+.meta-content .heading a,
+.meta-content .heading a:visited,
+.meta-content .heading a:active {
+    font-weight: 700;
+    color: #0097B2;
+}
+.meta-content .heading p {
+    padding: 0;
+    margin: 0 0 5px 0;
+}
+.author,
+.date {
+    font-size: 0.8rem;
+}
+.description {
+    font-size: 0.9rem;
+}
+#top-reviews {
+    padding: 0 0 0 10px;
+    margin: auto;
+    flex: 1 100%;
+    color: #000000;
+    background-color: #FFFFFF;
+    align-self: baseline;
+}
+#top-reviews ul {
+    list-style: none;
+    padding: 0;
+}
+#top-reviews h3 {
+    padding: 0;
+    margin: 0;
+}
+#error {
+    color: #FF0000;
+    display: none;
+}
+#copyright {
+    text-align: center;
+}
+/*Toggle Menu CSS*/
+.main-menu-btn {
+    position: relative;
+    display: inline-block;
+    left: 20px;
+    width: 28px;
+    height: 28px;
+    text-indent: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* hamburger icon */
+.main-menu-btn-icon,
+.main-menu-btn-icon:before,
+.main-menu-btn-icon:after {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    height: 2px;
+    width: 24px;
+    background: #bbb;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.main-menu-btn-icon:before {
+    content: '';
+    top: -7px;
+    left: 0;
+}
+.main-menu-btn-icon:after {
+    content: '';
+    top: 7px;
+    left: 0;
+}
+/* x icon */
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon {
+    height: 0;
+    background: transparent;
+}
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:before {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:after {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* hide menu state checkbox offscreen (so it stays visible to screen readers) */
+#main-menu-state {
+    position: absolute;
+    top: -99999px;
+}
+/* hide the menu in mobile view */
+#main-menu-state:not(:checked) ~ #main-menu {
+    display: none;
+}
+#main-menu-state:checked ~ #main-menu {
+    display: block;
+}
+@media only screen and (max-width: 1030px) {
+    #main-content article {
+        margin: 0 auto;
+    }
+    #main-wrapper aside {
+        display: none;
+    }
+}
+@media only screen and (max-width: 778px) {
+    header {
+        height: 100px;
+    }
+    nav {
+        width: 60%;
+        top: -45px;
+    }
+    .review {
+        flex-direction: column;
+        order: 1;
+        justify-content: center;
+    }
+    .video {
+        order: 2;
+        flex: 1 100%;
+        padding: 0;
+        min-width: 250px;
+        text-align: center;
+    }
+    .meta-content {
+        margin-left: 25px;
+        margin: 0 auto;
+        flex: 1 100%;
+        order: 1;
+        padding: 0;
+        min-width: 250px;
+    }
+    .social form {
+        display: none;
+    }
+}
+@media only screen and (min-width: 778px) {
+    #main-wrapper {
+        margin-top: 50px;
+    }
+    #main-menu {
+        position: relative;
+        z-index: 9999;
+    }
+    #main-menu ul {
+        width: 12em;
+    }
+    /* hide the button in desktop view */
+    .main-menu-btn {
+        position: absolute;
+        top: -99999px;
+    }
+    /* always show the menu in desktop view */
+    #main-menu-state:not(:checked) ~ #main-menu {
+        display: block;
+    }
+}

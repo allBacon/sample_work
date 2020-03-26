@@ -1,0 +1,271 @@
+* {box-sizing: border-box;}
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    text-transform: uppercase;
+    height: 180px;
+    margin: 0;
+    background-image: url(../img/steel.jpg);
+    background-size: auto 400px;
+    background-position: bottom;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav h1 {text-transform: uppercase; color: #FFFFFF;}
+
+header nav ul {
+    list-style: none;
+    display: inline; 
+    padding: 0;
+    text-align: left;
+    padding-left: 10px;
+}
+
+header nav ul li {display:inline-block; padding:0; margin-right: 20px;}
+
+header nav ul li a {text-decoration: none; color: #FFFFFF;}
+
+header img {
+    display: inline-block;
+/*  animation  */
+    animation: fadein linear 1.5s;
+}
+ 
+/* Product Page Style */
+section .product {
+    padding: 10px 30px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #FFFFFF;
+    top: 180px;
+    height: 502px;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.product-image {
+    height: 480px;
+    width: 650px;
+    float: left;
+    text-align: left;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+.product-content {
+    float: right;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+section .product-buy {
+    margin: 0 auto;
+    width: 100%;
+    height: 275px;
+    text-align: center;    
+}
+
+section .product-share {
+    width: 100%;
+    height: 60px;
+}
+
+section .product-details {
+    margin: 0 auto;
+    width: 100%;
+    height: 75px;
+    margin-bottom: 15px;  
+    text-align: center;
+    padding: 0 40px;
+}
+
+section .detail-content {
+    margin: 0 auto;
+    width: 100%;
+    height: 75px;
+    margin-bottom: 15px;  
+    text-align: center;
+    padding: 0 40px;
+    height: 55px;
+    overflow: auto;
+    cursor: pointer;
+    
+/*  TRANSITION  */
+    transition: all 0.75s;
+}
+
+.detail-content:active {
+    height: 600px;
+}
+
+section .product-price {
+    margin: 0 auto;
+    width: 300px;
+    height: 100px;
+    background-color: rgba(23,123,45,.1);
+    padding-left: 25px;
+    border: 3px solid red;
+}
+
+section .buy-now {
+    font-size: 28px;
+    width: 200px;
+    padding: 20px;
+    background-color: rgb(77, 77, 77);
+    margin: 10px auto;
+    display: inline-block;
+}
+
+a.buy-now {
+    text-decoration: none;
+    color: #ff0000;
+    display: block
+}
+
+input {padding: 2px 3px;}
+input:focus {
+    background-color: lightgrey;
+    padding: 5px 5px;
+}
+
+section .main-img {
+    width: 500px;
+    display: inline-block;
+    height: 100%;
+    float: right;
+    background-image: url(../img/products/asusstrix980ti.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section .product-brand-logo {
+    display: inline;
+    background-image: url(../img/asuslogo.jpg);
+    background-size: 100px 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 110px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+section .thumbNav {
+    width: 20%;
+    height: 100%;
+    text-align: left;
+    display: inline-block;
+    float: left;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    padding-top: 100px; 
+}
+
+.thumb-bar-image {
+    height: 60px;
+    width: 75px;
+    display: block;
+    margin-bottom: 30px; 
+    
+/*  TRANSITION  */
+    transition: all 0.5s linear;
+}
+
+.thumb-bar-image:hover {
+    position: absolute;
+    border: 1px solid black;
+    width: 800px;
+    height: 550px; 
+    z-index: 1000;
+}
+
+.product-share h4 {display: inline-block;}
+.product-details h4 {display: inline; margin-left: 10px;}
+
+.fa-plus-square {
+    display: inline;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.social .fa {
+    display: inline-block;
+    font-size: 35px;
+    margin: 0 10px;
+    width: 35px;
+}
+
+.social a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.social a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+section .price {
+    text-align: left;
+    margin-left: 20px;
+}
+
+section .price-sup {
+    margin-bottom: 0;
+    line-height: 2px;
+    text-align: left;
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+
+
+/* KEYFRAMES Fade In */
+@keyframes fadein {
+ 0% {
+   opacity: 0;
+ }
+ 100% {
+   opacity: 1;
+ }
+}
+
+@media (max-width: 1280px) {
+    section .product {
+    position: relative;
+    height: 502px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 250px;
+    }
+
+    .product-image {
+        height: 480px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .product-content {
+        width: 100%;
+        text-align: center;
+    }
+}

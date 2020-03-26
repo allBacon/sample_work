@@ -1,0 +1,164 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color:#000000;
+    color: #00445A;
+}
+
+/* secondary set of style rules for used for demo */
+/* Use flexcontainer as main flex containter */
+/*
+* justify-content 
+ Pack flex items from the start 
+	justify-content: flex-start;
+
+* Pack items from the end 
+	justify-content: flex-end;
+
+* Pack items around the center 
+	justify-content: center;
+
+* Distribute items evenly
+The first item at the start, the last at the end
+	justify-content: space-between;
+
+* Distribute items evenly
+Items have equal space around them 
+	justify-content: space-around;
+
+	justify-content: inherit;
+
+* align-items
+
+Align to cross-start 
+	align-items: flex-start;
+
+* Align to cross-end 
+	align-items: flex-end;
+
+* Center items in the cross-axis 
+	align-items: center;
+
+* Align the items' baselines 
+	align-items: baseline;
+
+* Stretch the items to fit 
+	align-items: stretch;
+
+	align-items: inherit;
+*/
+
+#flexcontainer {  /* This sets the orientation of the flex boxes to column style */
+	justify-content: center;
+	align-items: center; 
+}
+
+#flexcontainer {  /* This sets the orientation of the content within the flex boxes */
+	align-content: center;	
+}
+
+#flexcontainer {
+	height: 600px;
+	width: 600px;
+/*	min-height: 500px;
+	min-width: 500px; */
+	margin: 40px auto;
+	padding: 10px;
+	background: #C5FFD1;
+	border-radius: 5px;
+	display: -webkit-flex; /* important: this is how you initialize the flex box container */
+	display: flex;
+	-webkit-flex-flow: row; /* This sets the orientation of the flex boxes to row style */
+	flex-flow: row;
+}
+
+#flexcontainer > article {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #5F2D00;
+	background: #FFA780;
+	-webkit-flex: 0 1 50px;
+	flex: 0 1 50px;
+	-webkit-order: 2;
+	order: 2;
+}
+
+#flexcontainer > aside {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #5F2D00;
+	background: #FFA780;
+	-webkit-flex: 0 1 50px;
+	flex: 0 1 50px;
+	-webkit-order: 3;
+	order: 3;
+}
+
+#flexcontainer > header {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #5F2D00;
+	background: #FFA780;	
+	-webkit-flex: 0 1 100px;
+	flex: 0 1 100px;
+	-webkit-order: 0;
+	order: 0;
+}
+
+#flexcontainer > footer {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #5F2D00;
+	background: #FFA780;
+	-webkit-flex: 0 1 50px;
+	flex: 0 1 50px;
+	-webkit-order: 5;
+	order: 5;
+}
+
+#flexcontainer > nav {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #5F2D00;
+	background: #FFA780;
+	-webkit-flex: 0 1 50px;
+	flex: 0 1 50px;
+	-webkit-order: 1;
+	order: 1;
+}
+
+/* end secondary styles */
+
+/* 
+ @media rule for all screen types,
+ when the condition of screen width 
+ is less than 500px follow this style
+*/
+@media all and (max-width: 500px) {
+
+	#flexcontainer { 
+		-webkit-flex-flow: column; /* This sets the orientation of the flex boxes to column style */
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start; 
+	}
+
+	#flexcontainer > article,
+	#flexcontainer > aside {
+		/* important */
+		-webkit-order: 0; /* This resets the order of the selected elements (in this case 2) */
+		order: 0;
+	}
+
+	header,
+	nav,
+	article,
+	aside, 
+	header, 
+	footer {
+		min-height: 50px;
+		max-height: 50px;
+	}
+}
+
+/* END @media all */

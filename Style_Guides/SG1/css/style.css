@@ -1,0 +1,160 @@
+/* Box-sizing changes the way the box-model is measured. Instead of padding and border adding to the width, it is measured inward leaving the width unchanged. */
+
+/*COLOR SCHEME
+soft green: rgb(189,223,179);
+medium green: rgb(0,157,97);
+grey green: rgb(44,55,46);
+dark teal: rgb(15,41,37);
+army green: rgb(70,95,63);
+*/
+
+* {box-sizing: border-box;}
+
+body {
+	margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.panel {
+	background-color: rgb(0,157,97);
+    padding: 15px 50px 5px 50px;
+    text-align: center;
+    color: rgb(189,223,179);}
+
+.panel h1 {font-size: 72px;}
+
+/* Container */
+.container {
+	max-width: 1170px;
+    margin: 0 auto;
+    padding: 15px 50px 5px 50px;
+    text-align: center;}
+
+/* Swatches */
+.swatches {
+	max-width: 700px;
+    padding: 10px;
+    margin: 0 auto;}
+
+.swatch {
+	width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 5px;}
+
+.swatch:nth-of-type(1) {
+	background-color: rgb(189,223,179);}
+
+.swatch:nth-of-type(2) {
+	background-color: rgb(0,157,97);}
+
+.swatch:nth-of-type(3) {
+	background-color: rgb(44,55,46);}
+
+.swatch:nth-of-type(4) {
+	background-color: rgb(15,41,37);}
+
+.swatch:nth-of-type(5) {
+	background-color: rgb(70,95,63);}
+
+/* Alerts */
+.alerts {
+    padding: 15px 50px 5px 50px;
+    text-align: center;}
+
+.alerts .success {background-color:rgb(0,157,97);font-weight:bold;color:#FFFFFF;padding:10px 20px;text-align:left;width:auto;margin:10px 0;border:1px solid rgb(15,41,37);}
+
+.alerts .willrobinson {background-color:rgb(44,55,46);font-weight:bold;color:#ffc600;padding:10px 20px;text-align:left;width:auto;margin:10px 0;border:2px solid rgb(70,95,63);}
+
+.alerts .error {background-color:rgb(189,223,179);font-weight:bold;color:#ff0000;padding:10px 20px;text-align:left;width:auto;margin:10px 0;border:1px solid rgb(15,41,37);}
+
+/* Buttons */
+button {margin:0 10px;}
+
+.buttons {
+    padding: 15px 50px 5px 50px;
+    text-align: center;
+}
+.buttons .primary {
+    border-radius: 5px;
+    padding: 8px 20px;
+    border:none;
+    background-color: rgb(70,95,63);
+    color: #FFFFFF;
+}
+.buttons .secondary {
+    border-radius: 5px;
+    padding: 8px 20px;
+    border:none;
+    background-color: rgb(44,55,46);
+    color: #FFFFFF;
+}
+.submit {
+    border-radius: 5px;
+    padding: 8px 20px;
+    border:none;
+    background-color: rgb(70,95,63);
+    color: #FFFFFF;
+}
+.submit:hover {background-color: rgb(44,55,46);}
+
+
+/* Type & Headings */
+.heading-style {padding: 15px 50px 5px 50px;text-align: center;}
+
+.heading-style h2:nth-of-type(1) {text-align: left;font-family: 'Roboto', sans-serif;}
+
+.heading-style {
+    font-family: 'Open Sans', sans-serif;
+}
+.type {padding: 15px 50px 5px 50px;}
+
+.type p {padding:10px;}
+
+/* List Style */
+.list-style {padding: 15px 50px 5px 50px;text-align: left;}
+
+ol {list-style: upper-alpha;}
+
+ul {list-style: square;}
+
+li {font-size:18px;}
+
+/* Blockquote Style */
+.blockquote {padding: 15px 50px 5px 50px;text-align: left;}
+
+blockquote {
+    background-color: rgb(70,95,63);
+    padding: 20px 30px;
+    color: #FFFFFF;
+    font-size: 17px;
+    border: 1px dotted white;}
+
+blockquote i {margin:0 5px;}
+
+/* Form Style */
+.form-style {padding: 15px 50px 5px 50px;text-align: left;}
+
+form {margin: 0 auto;width:80%;}
+
+legend {font-weight: bold; color:rgb(44,55,46);}
+
+label, input {display: inline-block;}
+
+label {width:30%;text-align: right;color:rgb(15,41,37);}
+
+input {width:30%;margin:10px 30% 0 4%;background-color: rgb(189,223,179);border:1px solid black;}
+
+select {width:30%;margin:10px 30% 0 4%;}
+
+option:nth-child(even) {background-color: rgb(189,223,179);}
+
+/* Table Style */
+.table-style {padding: 15px 50px 5px 50px;text-align: left;}
+
+table {margin: 0 auto;padding:40px;border: 1px solid black;}
+
+tr {padding:40px;border: 1px solid black;}
+
+td {padding:40px;border: 1px solid black;}
